@@ -11,6 +11,12 @@ We can't keep letting them win.
 
 Refresh it whenever you make local changes
 
-## Imports
+## Development notes
+
+### Icons
+
+[Google's Material Icons](https://fonts.google.com/icons)
+
+### Imports
 
 [Are gross](https://stackoverflow.com/a/58137279)
