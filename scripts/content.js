@@ -22,18 +22,13 @@ function replaceCharmedPrices() {
 function replaceCharmedPricesAmazon() {
   // Amazon breaks up prices into the separate elements
   const priceWholes = document.querySelectorAll('.a-price-whole');
-  // TODO: maybe can delete price decimal shit
-  const priceDecimals = document.querySelectorAll('.a-price-decimal');
   const priceFractions = document.querySelectorAll('.a-price-fraction');
 
   priceWholes.forEach((priceWholeElem, index) => {
-    const priceDecimalElem = priceDecimals[index];
     const priceFractionElem = priceFractions[index];
-
     const priceString = `${priceWholeElem.innerText}${priceFractionElem.innerText}`
 
     priceWholeElem.innerText = uncharmPriceString(priceString);
-    priceDecimalElem.innerText = '';
     priceFractionElem.innerText = '';
   });
 }
