@@ -11,11 +11,18 @@
   },
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
-      "matches": [
-        "https://*/*",
-        "https://*/*"
-      ]
+      "js": [
+        "scripts/common.js",
+        "scripts/content.js"
+      ],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "js": [
+        "scripts/common.js",
+        "scripts/content_amazon.js"
+      ],
+      "matches": ["*://*.amazon.com/*"]
     }
   ]
 }
