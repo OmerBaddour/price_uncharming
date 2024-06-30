@@ -13,4 +13,4 @@ Refresh it whenever you make local changes
 
 ## Imports
 
-[Are gross](https://stackoverflow.com/questions/48104433/how-to-import-es6-modules-in-content-script-for-chrome-extension/53033388#53033388)
+[Are gross](https://stackoverflow.com/a/58137279)
